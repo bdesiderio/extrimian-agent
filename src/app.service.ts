@@ -15,7 +15,7 @@ export class AgentService {
       console.log(args.vc);
 
       //ACA SE DEBEN HACER LAS INTEGRACIONES CON SERVICIOS EXTERNOS PARA INFORMAR 
-      //QUE SE REALIZÓ LA EMISIÓN (TODAVÍA FALTA EL OK DEL REMITENTE, ACK)
+      //QUE SE REALIZÓ LA EMISIÓN (TODAVÍA FALTA EL OK DEL REMITENTE, EL ACK, PERO LA CREDENCIAL YA SE EMITIÓ)
     });
 
     agent.vc.presentationVerified.on(async (args) => {
@@ -38,7 +38,7 @@ export class AgentService {
       //Este es el id de WACI original
       console.log("WACI InvitationId", thId);
 
-      //ACA SE PUEDEN HACER LAS INTEGRACIONES CON SERVICIOS EXTERNOS PARA INFORMAR EL DEL OTRO LADO SE RECIBIO TODO OK
+      //ACA SE PUEDEN HACER LAS INTEGRACIONES CON SERVICIOS EXTERNOS PARA INFORMAR EL DEL OTRO LADO SE RECIBIO TODO OK (ACK)
     });
   }
 

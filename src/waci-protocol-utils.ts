@@ -24,6 +24,7 @@ export class WACIProtocolService {
             issuer: {
 
                 issueCredentials: async (waciInvitationId: string, holderId: string) => {
+                    console.log("waciInvitationId", waciInvitationId);
                     return new WACICredentialOfferSucceded({
                         credentials: [
                             {
